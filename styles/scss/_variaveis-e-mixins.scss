@@ -1,0 +1,41 @@
+// Cores
+$black: #0C261C;
+$white: #FFF;
+$green:#75BC97;
+$dark-gray:#848484;
+$gray:#A9A9A9;
+$ligth-gray:#F6F6F6;
+$dark-green:#1E6B4E;
+// Tipografia
+@mixin typography($tamanho) {
+    font-family: "Montserrat", sans-serif;
+    @if $tamanho==14 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    @else if $tamanho==16 {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    @else if $tamanho==24 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    @else if $tamanho==36 {
+        font-size: 36px;
+    }
+    @else if $tamanho==40 {
+        font-size: 40px;
+    }
+    @else if $tamanho==45 {
+        font-size: 45px;
+    }
+    @else if $tamanho==55 {
+        font-size: 55px;
+        line-height: 67px;
+    }
+    @else if $tamanho==70 {
+        font-size: 70px;
+        line-height: 85px;
+    }
+}

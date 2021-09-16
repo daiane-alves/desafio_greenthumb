@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <title>Front End Test - Greenthumb</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Greenthumb">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/scss/style.css">
+</head>
+
+<body>
+    <div class="loader invisible" id="loader"></div>
+
+    <header class="header">
+        <div class="container header__content">
+            <img class="header__logo" src="images/logo-white.svg" alt="Greenthumb" />
+            <h1 class="header__title">Find your next green friend</h1>
+            <img class="header__action" onclick="goToBottom()" src="images/seta.svg" alt="Greenthumb" />
+        </div>
+    </header>
+
+    <section class="filters">
+        <form class="container" id="filters-form">
+            <div class="grid-1-3 filters__item">
+                <img class="filters__icon" src="./images/hero/sun.svg" alt="Bikcraft Passeio">
+                <label class="filters__label"><b>1.</b> Set the amount of <b>sunlight</b> your plant will get.</label>
+                <select class="dropdown" name="sun" id="sun">
+                    <option value="" selected>Select...</option>1
+                    <option value="no" >No sunlight</option>
+                    <option value="low">Low sunlight</option>
+                    <option value="high">High sunlight</option>
+                  </select>
+            </div>
+
+            <div class="grid-1-3 filters__item">
+                <img class="filters__icon " src="./images/hero/wateringcan.svg" alt="Bikcraft Esporte">
+                <label class="filters__label"><b>2.</b> How often do you want to <b>water</b> your plant?</label>
+                <select class="dropdown" name="water" id="water">
+                    <option value="" selected>Select...</option>
+                    <option value="regularly">Rarely</option>
+                    <option value="daily" >Regularly</option>
+                    <option value="rarely">Daily</option>
+                  </select>
+            </div>
+
+
+            <div class="grid-1-3 filters__item">
+                <img class="filters__icon" src="./images/hero/dog.svg" alt="Bikcraft Retrô">
+                <label class="filters__label"><b>3.</b> Do you have pets? Do they <b>chew</b> plants?</label>
+                <select class="dropdown" name="pets" id="pets">
+                    <option value="" selected>Select...</option>
+                    <option value="true">No/They don’t care</option>
+                    <option value="false" >Yes</option>        
+                  </select>
+            </div>
+        </form>
+    </section>
+
+    <section class="no-results" id="no-results">
+        <div class="container">
+            <h2 class="no-results__title">No results yet…</h2>
+            <p class="no-results__description">Use the filters above to find the plant that best fits your environment :)</p>
+        </div>
+    </section>
+
+    <section class="results invisible" id="results">
+        <div class="container">
+            <img class="results__icon" src="./images/pick.svg" alt="Pick">
+            <h2 class="results__title">Our picks for you</h2>
+            <ul class="results__list grid-16" id="results-list"></ul>
+            <button class="btn" name="button" onclick="backToTop()">back to the top</button>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="./js/main.js"></script>
+    <!-- JavaScript -->
+
+</body>
+
+</html>

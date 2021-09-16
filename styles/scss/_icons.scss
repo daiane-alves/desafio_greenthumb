@@ -1,0 +1,63 @@
+%icon {
+    height: 30px;
+    width: 30px;
+}
+
+.icon {
+    &__sun-high {
+        @extend %icon;
+        background: url(../../images/results/status/HighSun.svg);
+        background-size: cover;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    &__sun-no {
+        @extend %icon;
+        background: url(../../images/results/status/NoSun.svg);
+        background-size: cover;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    &__sun-low {
+        @extend %icon;
+        background: url(../../images/results/status/LowSun.svg);
+        background-size: cover;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    &__water-rarely {
+        @extend %icon;
+        background: url(../../images/results/status/OneDrop.svg);
+        background-size: cover;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    &__water-regularly {
+        @extend %icon;
+        background: url(../../images/results/status/TwoDrops.svg);
+        background-size: cover;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    &__water {
+        @extend %icon;
+        background: url(../../images/results/status/ThreeDrops.svg);
+        background-size: cover;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    &__toxic {
+        @extend %icon;
+        background: url(../../images/results/status/Toxic.svg);
+        background-size: cover;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    &__untoxic {
+        @extend %icon;
+        background: url(../../images/results/status/Pet.svg);
+        background-size: cover;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
